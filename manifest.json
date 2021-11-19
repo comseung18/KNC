@@ -1,0 +1,28 @@
+{
+    "author": "comseung18",
+    "manifest_version": 2,
+    "name": "KoreatechNoticeCherck",
+    "short_name": "KNC",
+    "version": "1.0.0",
+    "default_locale": "en",
+    "description": "Koreatech Notice Check",
+
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+
+    },
+    "options_ui": {
+
+    },
+    "permissions": [
+        "activeTab", "http://*/*", "https://*/*"
+    ],
+    "content_scripts": [
+
+    ],
+    "background": {
+
+    }
+}
