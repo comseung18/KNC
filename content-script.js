@@ -3,6 +3,10 @@ function check_and_add_event_listener() {
     if (f1) {
         // console.log("f1 찾았음");
         var f2 = f1.contentWindow.document.getElementsByName('subBodyFrame')[0];
+        if (!f2 || !f2.getAttribute('src').startsWith('/ctt/bb/bulletin?b=')) {
+            // console.log('detect cross origin');
+            return;
+        }
         if (f2) {
             // console.log("f2 찾았음");
             var notice_table = f2.contentWindow.document.getElementById('boardTypeList');
