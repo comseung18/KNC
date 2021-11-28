@@ -1,5 +1,5 @@
 function check_and_add_event_listener() {
-    var f1 = document.getElementsByName('menuFrame')[0];
+    var f1 = document.getElementById('fr-S12397');
     if (f1) {
         // console.log("f1 찾았음");
         var f2 = f1.contentWindow.document.getElementsByName('subBodyFrame')[0];
