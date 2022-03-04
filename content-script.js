@@ -32,7 +32,7 @@ function check_and_add_event_listener() {
                     let tr = trs[i];
                     if (tr.tagName == "TR" && tr.getAttribute('data-name') == "post_list") {
                         let base_url = tr.getAttribute('data-url');
-                        chrome.storage.sync.get(base_url, (res) => {
+                        chrome.storage.local.get(base_url, (res) => {
                             if (res.hasOwnProperty(base_url)) tr.style.backgroundColor = 'yellow';
                         });
                     }
@@ -60,7 +60,7 @@ function notice_clicked(e) {
             });
 
             // console.log("저장 잘 되었는지 테스트")
-            // chrome.storage.sync.get(base_url, (res) => {
+            // chrome.storage.local.get(base_url, (res) => {
             //     console.log(res);
             // });
             break;
