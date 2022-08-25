@@ -53,7 +53,7 @@ function notice_clicked(e) {
             if (!base_url) continue;
 
             // ele.style.backgroundColor = 'yellow';
-            chrome.storage.sync.set({
+            chrome.storage.local.set({
                 [base_url]: true
             }, () => {
                 console.log(base_url + " set true ");
