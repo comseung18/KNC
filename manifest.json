@@ -1,7 +1,7 @@
 {
     "author": "comseung18",
     "manifest_version": 3,
-    "name": "KoreatechNoticeCherck",
+    "name": "KoreatechNoticeCheck",
     "short_name": "KNC",
     "version": "1.0.0",
     "description": "Koreatech Notice Check",
